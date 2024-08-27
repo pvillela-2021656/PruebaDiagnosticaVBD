@@ -1,13 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package org.pruebaDiagnosticaVBD.model;
 
-/**
- *
- * @author informatica
- */
-public class Circulo {
+public abstract class Circulo extends Forma {
     
+    private double radio;
+    
+    
+    public Circulo(double radio, String color){
+        super(color);
+        this.radio = radio;
+    }
+    
+    @Override
+    public double calcularArea() {
+        return Math.PI * radio*2;
+    }
+
+    @Override
+    public String toString() {
+        return "Circulo con radio: " + radio + " y color: " + getColor();
+    }
 }
+    
+    
+    
+    
+    
+    
+

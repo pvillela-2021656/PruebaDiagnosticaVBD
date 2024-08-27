@@ -10,7 +10,7 @@ package org.pruebaDiagnosticaVBD.model;
  */
 public class Computadora extends Dispositivo {
 
-    String sistemaOperativo;
+    private String sistemaOperativo;
 
     public Computadora() {
     }
@@ -29,4 +29,11 @@ public class Computadora extends Dispositivo {
         System.out.println("El dispositivo se desbloqueo con el codigo: " + clave);
     }
 
+    @Override
+   public void mostrarInformacion(){
+        super.mostrarInformacion();
+        System.out.println("Sistema Operativo: " + sistemaOperativo + "\n" + 
+                "}");
+    }
+    
 }

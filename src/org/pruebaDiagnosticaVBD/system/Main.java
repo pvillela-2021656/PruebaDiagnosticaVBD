@@ -15,18 +15,19 @@ public class Main {
     
     public static void main(String[] args) {
         
-        Telefono telefono = new Telefono("Samsung", "4641AS-1", "2023", "Si");
+        Telefono telefono = new Telefono("Samsung", "4641AS-1", "2023", "Vertical");
         Computadora computadora = new Computadora("Lenovo", "23AS-2", "2024", "Windows");
         Televisor televisor = new Televisor("LG", "HJA-25", "2010", "34 pulgadas");
         
         
+        System.out.println("------------------------------------------------");
         
         telefono.encender();
         telefono.encender(34);
         telefono.encender("Abc");
         telefono.mostrarInformacion();
         
-        System.out.println("--------------------------------------");
+        System.out.println("------------------------------------------------");
         
         computadora.encender();
         computadora.encender(135);

@@ -56,8 +56,8 @@ public abstract class Dispositivo {
         System.out.println("Información del dispositivo: { " + "\n" + 
                 "Marca: " + marca + "\n" + 
                 "Modelo: " + modelo + "\n" + 
-                "Año: " + anio + "\n" + 
-                "}");
+                "Año: " + anio
+               );
     }
     
 }

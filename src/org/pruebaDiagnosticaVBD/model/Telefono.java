@@ -31,6 +31,13 @@ public class Telefono extends Dispositivo{
         System.out.println("El dispositivo se desbloqueo con el codigo: " + codigo);
     }
     
+   @Override
+   public void mostrarInformacion(){
+        super.mostrarInformacion();
+        System.out.println("Tipo: " + tipo + "\n" + 
+                "}");
+    }
+    
     
     
 }

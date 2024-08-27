@@ -32,5 +32,12 @@ public class Televisor extends Dispositivo{
     }
     
     
+    @Override
+   public void mostrarInformacion(){
+        super.mostrarInformacion();
+        System.out.println("Tamaño de pantalla: " + tamanoPantalla + "\n" + 
+                "}");
+    }
+    
     
 }

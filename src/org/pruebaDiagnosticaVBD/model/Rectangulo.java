@@ -4,6 +4,7 @@ package org.pruebaDiagnosticaVBD.model;
 
 public class Rectangulo extends Forma{
     
+    //atributos
     private double largo;
     private double ancho;
     
@@ -13,7 +14,9 @@ public class Rectangulo extends Forma{
         this.largo = largo;
         this.ancho = ancho;
     }    
-    
+    /*
+    metodo para calcualr el area del rectangulo
+    */
     @Override
     public double calcularArea(){
         return largo*ancho;

@@ -1,7 +1,7 @@
 package org.pruebaDiagnosticaVBD.model;
 
 
-public abstract class Cuadrado extends Forma {
+public class Cuadrado extends Forma {
     
     private double base;
     private double altura;
@@ -17,11 +17,6 @@ public abstract class Cuadrado extends Forma {
     public double calcularArea(){
         return base*altura;
     }
-    
-    @Override 
-    public String toString(){
-        return "La base es de"+ base+"la altura es de"+altura;
-    }
-    
+       
  
 }

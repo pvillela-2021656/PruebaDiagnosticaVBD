@@ -1,7 +1,7 @@
 
 package org.pruebaDiagnosticaVBD.model;
 
-public abstract class Circulo extends Forma {
+public class Circulo extends Forma {
     
     private double radio;
     
@@ -16,10 +16,6 @@ public abstract class Circulo extends Forma {
         return Math.PI * radio*2;
     }
 
-    @Override
-    public String toString() {
-        return "Circulo con radio: " + radio + " y color: " + getColor();
-    }
 }
     
     

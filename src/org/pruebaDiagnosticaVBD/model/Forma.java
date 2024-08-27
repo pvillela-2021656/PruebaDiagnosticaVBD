@@ -26,6 +26,8 @@ public abstract class Forma {
     
     public void mostrarInformacion(){
         System.out.println("El color es" + color);
+        System.out.println("El area es de" + calcularArea());
+             
         
     }
     

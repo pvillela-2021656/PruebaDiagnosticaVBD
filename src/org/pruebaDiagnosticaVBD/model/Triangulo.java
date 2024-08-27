@@ -1,7 +1,7 @@
 package org.pruebaDiagnosticaVBD.model;
 
 
-public abstract class Triangulo extends Forma {
+public class Triangulo extends Forma {
     
     
     private double base;
@@ -22,8 +22,4 @@ public abstract class Triangulo extends Forma {
         return base*altura/2;
     }
     
-    @Override
-    public String toString(){
-        return "La base es de" + base + "la altura es de" + altura;
-    }
 }

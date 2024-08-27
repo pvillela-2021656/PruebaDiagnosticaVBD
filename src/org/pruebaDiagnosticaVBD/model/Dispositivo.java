@@ -7,14 +7,23 @@ package org.pruebaDiagnosticaVBD.model;
  */
 public abstract class Dispositivo {
     
+    // Atributos
+    
     private String marca;
     private String modelo;
     private String anio;
-
+    
+    /*
+        Constructor vacío
+    */
+    
     public Dispositivo() {
         
     }
-
+    
+    
+    // Metodo sobrecargado
+    
     public Dispositivo(String marca, String modelo, String anio) {
         this.marca = marca;
         this.modelo = modelo;
@@ -45,12 +54,22 @@ public abstract class Dispositivo {
         this.anio = anio;
     }
     
-    
+    /*
+        Método abstracto de encender
+    */
     public abstract void encender();
+    
+    /*
+        Método para el voltaje en ls demás clases
+    */
     
     public void encender(int voltaje){
         System.out.println("El dispositivo al encender tiene un voltaje de " + voltaje + "V");
     }
+    
+    /*
+        Método mostrar información
+    */
     
     public void mostrarInformacion(){
         System.out.println("Información del dispositivo: { " + "\n" + 

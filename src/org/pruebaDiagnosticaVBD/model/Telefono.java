@@ -10,9 +10,18 @@ package org.pruebaDiagnosticaVBD.model;
  */
 public class Telefono extends Dispositivo{
 
+    /*
+      Atributos
+     */
+    
     private String tipo;    
     
+    /*
+        Constructor vacío
+    */
+    
     public Telefono() {
+        
     }
 
     public Telefono(String marca, String modelo, String anio, String tipo) {
@@ -30,6 +39,10 @@ public class Telefono extends Dispositivo{
     public void encender(String codigo){
         System.out.println("El dispositivo se desbloqueo con el codigo: " + codigo);
     }
+    
+    /*
+        Metodo sobre escrito de mostrar información
+    */
     
    @Override
    public void mostrarInformacion(){

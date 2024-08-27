@@ -7,9 +7,9 @@ package org.pruebaDiagnosticaVBD.model;
  */
 public abstract class Dispositivo {
     
-    String marca;
-    String modelo;
-    String anio;
+    private String marca;
+    private String modelo;
+    private String anio;
 
     public Dispositivo() {
         

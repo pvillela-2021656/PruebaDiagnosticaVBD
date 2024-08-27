@@ -4,17 +4,42 @@
  */
 package org.pruebaDiagnosticaVBD.system;
 
+import org.pruebaDiagnosticaVBD.model.*;
+
 /**
  *
  * @author informatica
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Telefono telefono = new Telefono("Samsung", "4641AS-1", "2023", "Si");
+        Computadora computadora = new Computadora("Lenovo", "23AS-2", "2024", "Windows");
+        Televisor televisor = new Televisor("LG", "HJA-25", "2010", "34 pulgadas");
+        
+        
+        
+        telefono.encender();
+        telefono.encender(34);
+        telefono.encender("Abc");
+        telefono.mostrarInformacion();
+        
+        System.out.println("--------------------------------------");
+        
+        computadora.encender();
+        computadora.encender(135);
+        computadora.encender("contrasenia");
+        computadora.mostrarInformacion();
+        
+        System.out.println("------------------------------------------------");
+        
+        televisor.encender();
+        televisor.encender(50);
+        televisor.mostrarInformacion();
+        
+      
     }
     
 }

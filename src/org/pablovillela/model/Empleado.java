@@ -1,14 +1,16 @@
 package org.pablovillela.model;
 
 abstract class Empleado {
-    private String nombre;
-    private int edad;
-    private double salario;
+    
+    protected String nombre;
+    protected int edad;
+    protected double salario;
     
     public Empleado(){
         
     }
 
+    // Constructor
     public Empleado(String nombre, int edad, double salario) {
         this.nombre = nombre;
         this.edad = edad;
@@ -40,11 +42,11 @@ abstract class Empleado {
         this.salario = salario;
     }
     
-    
+    // Método abstracto.
     public abstract void trabajar();
     
-    
+    // Implementación del método abstracto trabajar.
     public void trabajar(int horas){
-        System.out.println("");
+        System.out.println(nombre + " esta trabajando " + horas + " ");
     }
 }
